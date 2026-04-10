@@ -1,0 +1,125 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(#e6dfe3, #eac1d0);
+  text-align: center;
+  overflow-x: hidden;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  height: 50px;
+  width: 100%;
+  background-image: url("images/polkabanner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.banner.bottom {
+  margin-top: auto;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  color: #e88fb0;
+  margin-top: 60px;
+  font-weight: 500;
+}
+
+.subtitle {
+  color: #e88fb0;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: #f2ebe9;
+  padding: 25px;
+  width: 200px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.card h2 {
+  color: #e88fb0;
+  font-weight: 400;
+}
+
+.card a {
+  display: block;
+  background: #d7e45a;
+  color: #5a5a2d;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.card a:hover {
+  background: #f7ffc0;
+}
+
+.bubble-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow:
+    0 0 22px rgba(255,255,255,0.85),
+    0 0 40px rgba(255,255,255,0.35);
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.15); }
+  100% { opacity: 0.2; transform: scale(0.95); }
+}
+
+.b1  { width: 60px; height: 60px; top: 8%;  left: 6%;  background: rgba(255,182,193,0.5); }
+.b2  { width: 50px; height: 50px; top: 12%; left: 85%; background: rgba(215,228,90,0.4); }
+
+.b3  { width: 70px; height: 70px; top: 30%; left: 5%;  background: rgba(255,200,220,0.45); }
+.b4  { width: 45px; height: 45px; top: 35%; left: 90%; background: rgba(215,228,90,0.45); }
+
+.b5  { width: 65px; height: 65px; top: 55%; left: 7%;  background: rgba(255,182,193,0.45); }
+.b6  { width: 35px; height: 35px; top: 60%; left: 88%; background: rgba(215,228,90,0.5); }
+
+.b7  { width: 80px; height: 80px; top: 75%; left: 10%; background: rgba(255,200,220,0.45); }
+.b8  { width: 55px; height: 55px; top: 80%; left: 70%; background: rgba(215,228,90,0.45); }
+.b9  { width: 40px; height: 40px; top: 85%; left: 45%; background: rgba(255,182,193,0.5); }
+
+.b10 { width: 75px; height: 75px; top: 18%; left: 10%; background: rgba(215,228,90,0.4); }
+.b11 { width: 30px; height: 30px; top: 22%; left: 82%; background: rgba(255,182,193,0.5); }
+.b12 { width: 60px; height: 60px; top: 65%; left: 55%; background: rgba(215,228,90,0.4); }
+.b13 { width: 50px; height: 50px; top: 10%; left: 60%; background: rgba(255,200,220,0.5); }
+.b14 { width: 65px; height: 65px; top: 45%; left: 25%; background: rgba(215,228,90,0.4); }
+.b15 { width: 45px; height: 45px; top: 70%; left: 90%; background: rgba(255,182,193,0.5); }
