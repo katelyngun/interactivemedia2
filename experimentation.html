@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Look in the console to see the results </h1>
 
+    <script>
+
+// Write a program that takes a lowercase string and capitalizes the first letter of each word in the string: fail cus it only capitalized apple + not loop  //
+
+        // let myText = 'apple banana orange';
+        // let newString = myText.charAt(0).toUpperCase() + myText.slice(1);
+
+        // console.log (myText);
+        // console.log(newString);
+
+
+
+        
+
+// Write a program that takes a lowercase string and capitalizes the first letter of each word in the string; SUCCESSSSS! //
+
+        var myText = "apple banana orange strawberry kiwi watermelon blueberry";
+        var words = myText.split(' ');
+        
+        
+        for (var i = 0; i < words.length; i++) {
+      
+        var word = words[i];
+        words[i] = word.charAt(0).toUpperCase() + word.slice(1);
+
+    }
+           
+        var newString = words.join(' ')
+
+        console.log (myText);
+        console.log(newString);
+
+
+
+// Write a program that capitalizes every other letter (even or odd letters) in words in the string.  //
+
+
+        var myText2 = "apple banana orange strawberry kiwi watermelon blueberry";
+        var newString2 = "";
+        
+        
+for (var i = 0; i < myText2.length; i++) {
+    if (i % 2 === 0) {
+        newString2 += myText2[i].toUpperCase();
+    } else {
+        newString2 += myText2[i].toLowerCase();
+    }
+}
+
+        console.log (myText2);
+        console.log(newString2);
+        
+
+
+    </script>
+
+</body>
+</html>
