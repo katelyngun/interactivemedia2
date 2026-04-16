@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Journal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+<div class="bubble-layer">
+  <div class="bubble b1"></div>
+  <div class="bubble b2"></div>
+  <div class="bubble b3"></div>
+  <div class="bubble b4"></div>
+  <div class="bubble b5"></div>
+  <div class="bubble b6"></div>
+  <div class="bubble b7"></div>
+  <div class="bubble b8"></div>
+  <div class="bubble b9"></div>
+  <div class="bubble b10"></div>
+  <div class="bubble b11"></div>
+  <div class="bubble b12"></div>
+  <div class="bubble b13"></div>
+  <div class="bubble b14"></div>
+  <div class="bubble b15"></div>
+</div>
+
+<div class="banner top"></div>
+
+<main class="journal-page">
+
+  <div class="journal-container">
+    <h1>Learning Journal</h1>
+
+    <p>
+      Reading <a href="https://uxdesign.cc/best-practices-for-form-design-ff5de6ca8e5f" target="_blank"> this article</a>, I learned many things about designing forms that I hadn’t previously thought of, but found to be very necessary from the perspective of a user who hates filling out forms. These methods of creating forms help create a more accessible and efficient experience, especially as many users find forms to be long, complex, and daunting at times, making them not want to fill them out or feel confused when completing them.
+    </p>
+
+    <p>
+      I think important methods to practice include accessibility features for all users, such as allowing control over text size and not relying on color alone for communication. Form feedback is also very important, since I often have difficulty knowing what I entered wrong and dislike having to search through every field to find the mistake.
+    </p>
+
+    <p>
+      I was filling out <a href="https://filmfreeway.com/projects/new" target="_blank"> this form</a> last month for Film Freeway, a film festival submission website, and every field was very clear and concise. It followed many of the methods stated in the article, such as explaining why “Country of Origin” is required, using dropdown menus for long lists, organizing information vertically, and placing the most important fields at the top.
+    </p>
+
+
+
+  </div>
+
+</main>
+
+<div class="banner bottom"></div>
+
+</body>
+</html>
