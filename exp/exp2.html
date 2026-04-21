@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pastel Colors</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family:'Courier New', Courier, monospace; 
+            text-align: center;
+        }
+
+        main {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+        }
+
+        h2 {
+            font-weight: normal;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+    <h1 id="title"> Title </h1>
+    <h2 id="message"> Message </h2>
+</main>
+
+<script>
+/*
+This program asks the user to choose a favorite color from a list (pink, mint, green, yellow, purple).
+It then changes the background color of the page to a pastel version of that color and displays a message on the page.
+*/
+
+function colorPrompt() {
+    var userColor = prompt("What's your favorite pastel color?: Pink, Blue, Green, Yellow, or Purple");
+    return userColor;
+}
+
+function getPastelColor(color) {
+    var colors = ["pink", "blue", "green", "yellow", "purple"];
+    var pastelColors = ["#ffd1dc", "#c7f2e3", "#d4f8d4", "#fff5ba", "#e6ccff"];
+
+    for (var i = 0; i < colors.length; i++) {
+        if (color === colors[i]) {
+            return pastelColors[i];
+        }
+    }
+
+    return null;
+}
+
+function updatePage(colorName, pastelValue) {
+    var title = document.getElementById("title");
+    var message = document.getElementById("message");
+
+    if (pastelValue) {
+        document.body.style.backgroundColor = pastelValue;
+        title.textContent = "Your favorite pastel color is " + colorName + "!";
+        message.textContent = "Enjoy this pastel background :)";
+    } else {
+        title.textContent = "Error!";
+        message.textContent = "You didn't put in a pastel color from the list. Refresh and try again!!!";
+    }
+}
+
+function startProgram() {
+    var userInput = colorPrompt();
+
+    if (userInput) {
+        userInput = userInput.toLowerCase();
+    }
+
+    var pastel = getPastelColor(userInput);
+    updatePage(userInput, pastel);
+}
+
+
+startProgram();
+
+</script>
+
+</body>
+</html>
