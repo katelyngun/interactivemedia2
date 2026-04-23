@@ -167,3 +167,12 @@ h1 {
 .journal-container p a:hover {
    color: #e54c84;
 }
+
+
+.journal-entry {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
