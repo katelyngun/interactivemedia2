@@ -1,1 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: 'Jacques Francois', serif;
+  background: linear-gradient(to bottom, #fdf6e3, #f8c9da);
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1600px;
+}
+
+
+
+.scroll-section {
+  background-image: url("images/scroll.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 45vw;
+  max-width: 700px;
+
+  height: 110vh;         
+  max-height: 900px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.scroll-content {
+  width: 60%;
+  text-align: center;
+
+  position: relative;
+
+  transform: translateY(-25px);
+}
+
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-family: 'New Rocker', cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input {
+  padding: 5px;
+  font-size: 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 8px;
+  padding: 7px;
+  font-size: 12px;
+  background-color: #ff94bb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+#result {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  display: block;
+
+  max-height: 400px;    
+  overflow-y: auto;    
+  padding-right: 5px;    
+}
+
+
+
+.princess-section {
+  flex-shrink: 0;
+}
+
+.princess {
+  width: 45vw;
+  max-width: 800px;
+  height: auto;
+}
