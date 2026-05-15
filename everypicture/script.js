@@ -149,6 +149,5 @@ function closePopup() {
 
 document.getElementById('popupClose').addEventListener('click', closePopup);
 document.getElementById('overlayBackdrop').addEventListener('click', closePopup);
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closePopup();
+
 });
