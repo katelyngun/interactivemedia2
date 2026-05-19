@@ -7,7 +7,7 @@ const items = [
     title: 'Unicorn Galaxy Top',
     label:  'Unicorn Galaxy Top', 
     desc: 'I love unicorns and galaxy prints!!! I like to bring both fantasy and 2000s nostalgia into my fashion, so this was a perfect $2 find at Savers. I wore this at the MySpace Rave. Hopefully it fit the theme, IDK I was not alive when it was popular. ',
-    photo: 'myspace.jpg',
+    photo: 'everypicture/myspace.jpg',
     coords: [80, 110, 180, 280]
   },
   {
@@ -15,7 +15,7 @@ const items = [
     label: 'I Love My Attitude Top',
     title: 'I Love My Attitude Top',
     desc: 'I DO love my attitude. At times, I am loud and flashy, just like this shirt. I love clothes that remind me of the clothing I wore when I was a wee lad. A wave of intense nostalgia triggered by my obsession with Kinect Sports, which I grew up playing, was what made me impulsively buy this top off Depop. ',
-    photo: 'attitudetop.jpg',
+    photo: 'everypicture/attitudetop.jpg',
     coords: [280, 120, 190, 280]
   },
   {
@@ -47,7 +47,7 @@ const items = [
     title: 'Rainbow Sweater',
     label: 'Rainbow Sweater',
     desc: 'I love colorful sweaters. I have a lot of them. My mom was like, "Another one?" I swear they all look different. When I wear them, people have told me I remind them of Enid from the series Wednesday. ',
-    photo: 'rainbowsweater.jpg',
+    photo: 'everypicture/rainbowsweater.jpg',
     coords: [1090, 130, 230, 290]
   },
   {
@@ -71,7 +71,7 @@ const items = [
     title: 'Mint Handbag',
     label: 'Mint Handbag',
     desc: 'This is my ride or die handbag. I have been really loving the color mint, especially paired with pink. I like to hang a bunch of charms and plushies on my bags to add personality to them. I also like to hear a lot of jangling with every step I take. ',
-    photo: 'mintbag.jpg',
+    photo: 'everypicture/mintbag.jpg',
     coords: [550, 490, 260, 270]
   },
   {
@@ -79,7 +79,7 @@ const items = [
     title: 'Nyan Cat Scarf',
     label: 'Nyan Cat Scarf',
     desc: 'I crocheted this Nyan Cat Scarf out of love for the Nyan Cat. Nyan Cat, Pusheen, Tokidoki, Paul Frank, Domo.. I love the cute cartoon characters of the 2010s. I crocheted it while watching BTS videos with my mom last summer - a time I really miss. I threw together a last-minute Nyan Cat costume on the night of a Halloween party and wore this scarf then. ',
-    photo: 'nyancat.jpg',
+    photo: 'everypicture/nyancat.jpg',
     coords: [850, 620, 300, 130]
   },
   {
@@ -87,7 +87,7 @@ const items = [
     title: 'Pink Fur Leg Warmers',
     label: 'Pink Fur Leg Warmers',
     desc: 'Fur leg warmers have been an outfit essential for me lately. I have different colors but these hot pink ones are my favorite. I wore them for my Pinkie Pie cosplay at SacAnime recently, which was so much fun and inspired me to want to cosplay more in the future! I have been obsessed with cosplay culture recently.',
-    photo: 'cosplay.jpg',
+    photo: 'everypicture/cosplay.jpg',
     coords: [1180, 580, 195, 175]
   }
 ];
