@@ -79,7 +79,7 @@ const items = [
     title: 'Nyan Cat Scarf',
     label: 'Nyan Cat Scarf',
     desc: 'I crocheted this Nyan Cat Scarf out of love for the Nyan Cat. Nyan Cat, Pusheen, Tokidoki, Paul Frank, Domo.. I love the cute cartoon characters of the 2010s. I crocheted it while watching BTS videos with my mom last summer - a time I really miss. I threw together a last-minute Nyan Cat costume on the night of a Halloween party and wore this scarf then.',
-    photo: 'images/nyancat.jpg',
+    photo: 'images/nyancat.JPG',
     coords: [850/IMG_W, 620/IMG_H, 300/IMG_W, 130/IMG_H]
   },
   {
