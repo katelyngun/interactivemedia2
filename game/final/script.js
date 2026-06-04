@@ -67,8 +67,8 @@
 
     
     function showDice(r1, r2) {
-        die1Img.src = `gameData.dice[r1 - 1]}`;
-        die2Img.src = `gameData.dice[r2 - 1]}`;
+        die1Img.src = gameData.dice[r1 - 1];
+        die2Img.src = gameData.dice[r2 - 1];
         die1Img.classList.add('visible');
         die2Img.classList.add('visible');
     }
