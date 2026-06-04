@@ -1,1 +1,58 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake Off!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+
+  <div id="game-shell">
+
+    <div id="game-wrapper">
+
+      <img id="bg" src="images/bakeoff8.png" alt="Bake Off game background">
+
+      <div id="overlay">
+
+        <div id="score-p1" class="score-box">0</div>
+        <div id="score-p2" class="score-box">0</div>
+
+        <div id="status-text"></div>
+
+        <div id="dice-area">
+          <img id="die1" class="die-img" src="" alt="die 1">
+          <img id="die2" class="die-img" src="" alt="die 2">
+        </div>
+
+        <div id="actions">
+          <button id="roll">roll</button>
+          <button id="pass">pass</button>
+        </div>
+
+        <div id="pb-p1-wrap" class="pb-wrap">
+          <div id="pb-p1" class="pb-fill"></div>
+        </div>
+        <div id="pb-p2-wrap" class="pb-wrap">
+          <div id="pb-p2" class="pb-fill"></div>
+        </div>
+
+        <div id="win-screen" class="hidden">
+          <div id="win-message"></div>
+          <button id="new-game">Bake Again!</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
