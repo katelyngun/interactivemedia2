@@ -7,15 +7,11 @@
 body {
   font-family: 'Jacques Francois', serif;
   background: linear-gradient(to bottom, #fdf6e3, #f8c9da);
-  height: 100vh;
-  overflow: hidden;
-
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
 
 .layout {
   display: flex;
@@ -24,40 +20,30 @@ body {
   gap: 60px;
   width: 100%;
   max-width: 1600px;
+  padding: 20px;
 }
-
-
 
 .scroll-section {
   background-image: url("images/scroll.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
   width: 45vw;
   max-width: 700px;
-
-  height: 110vh;         
+  height: 110vh;
   max-height: 900px;
-
   flex-shrink: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
 .scroll-content {
   width: 60%;
   text-align: center;
-
   position: relative;
-
   transform: translateY(-25px);
 }
-
 
 h1 {
   font-size: 26px;
@@ -89,18 +75,15 @@ button {
   font-weight: bold;
 }
 
-
 #result {
   margin-top: 12px;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-
   display: block;
-
-  max-height: 400px;    
-  overflow-y: auto;    
-  padding-right: 5px;    
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
 }
 
 #restart {
@@ -114,8 +97,6 @@ button {
   font-weight: bold;
 }
 
-
-
 .princess-section {
   flex-shrink: 0;
 }
@@ -124,4 +105,66 @@ button {
   width: 45vw;
   max-width: 800px;
   height: auto;
+}
+
+
+@media (max-width: 1200px) {
+  body {
+    overflow: auto;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+
+  .layout {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .princess-section {
+    display: none;
+  }
+
+  .scroll-section {
+    width: 90vw;
+    max-width: 600px;
+    height: 95vw;
+    max-height: 800px;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .scroll-section {
+    width: 98vw;
+    height: 140vw;
+    max-height: none;
+  }
+
+  .scroll-content {
+    width: 55%;
+    transform: translateY(-15px);
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input {
+    font-size: 11px;
+    padding: 4px;
+  }
+
+  button,
+  #restart {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  #result {
+    font-size: 12px;
+    max-height: 200px;
+  }
 }
